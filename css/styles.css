@@ -1125,29 +1125,68 @@ img {
   color: var(--secondary);
 }
 
-/* Gujarat Branch Offices Section */
+/* Pan-India Executive Branch Offices Section */
 .offices-section {
-  background-color: var(--bg-main);
+  background: linear-gradient(180deg, var(--bg-main) 0%, #f1f5f9 100%);
+  position: relative;
+}
+
+.office-controls-bar {
+  max-width: 850px;
+  margin: 0 auto 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.region-filter-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.region-chip {
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  border: 1.5px solid var(--border-light);
+  background-color: #ffffff;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.region-chip.active, .region-chip:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
 }
 
 .office-search-box {
-  max-width: 500px;
-  margin: 0 auto 2.5rem auto;
+  width: 100%;
+  max-width: 550px;
   position: relative;
 }
 
 .office-search-box input {
   width: 100%;
-  padding: 0.9rem 1rem 0.9rem 3rem;
+  padding: 0.95rem 1.25rem 0.95rem 3.2rem;
   border-radius: 50px;
   border: 1.5px solid var(--border-light);
-  font-size: 1rem;
+  font-size: 0.95rem;
   box-shadow: var(--shadow-sm);
   outline: none;
+  background-color: #ffffff;
+  transition: var(--transition);
 }
 
 .office-search-box input:focus {
   border-color: var(--secondary);
+  box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.15);
 }
 
 .office-search-box i {
@@ -1159,10 +1198,139 @@ img {
   font-size: 1.1rem;
 }
 
+.branch-counter-tag {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--secondary-light);
+  color: var(--secondary-hover);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 50px;
+}
+
 .offices-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
+}
+
+/* Ultra-Professional Executive Branch Card System */
+.pro-branch-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.pro-branch-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--secondary), #f97316);
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.pro-branch-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(245, 158, 11, 0.4);
+}
+
+.pro-branch-card:hover::before {
+  opacity: 1;
+}
+
+.pro-branch-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.pro-branch-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.15);
+  flex-shrink: 0;
+}
+
+.pro-branch-state {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--secondary-hover);
+  margin-bottom: 0.1rem;
+}
+
+.pro-branch-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.2;
+}
+
+.pro-branch-footer {
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pro-branch-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.pro-branch-tag i {
+  color: var(--secondary);
+}
+
+.pro-branch-btn {
+  background-color: var(--whatsapp-green);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.45rem 1rem;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: var(--transition);
+  box-shadow: 0 3px 8px rgba(37, 211, 102, 0.25);
+}
+
+.pro-branch-btn:hover {
+  background-color: var(--whatsapp-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(37, 211, 102, 0.35);
 }
 
 .office-card {

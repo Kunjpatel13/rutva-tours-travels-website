@@ -1,7 +1,7 @@
 /**
  * Rutva Tours & Travels - Master Application Script
  * Modular ES6 Engine for search tabs, package filters, modal Popups,
- * cab calculator, 13 Gujarat branch office live search, reviews carousel,
+ * cab calculator, branch office live search, reviews carousel,
  * and context-aware WhatsApp CTA dispatch.
  */
 
@@ -23,6 +23,7 @@ function buildWhatsAppUrl(customText) {
 
 // Packages Data Repository (Domestic & International)
 const PACKAGES_DATA = [
+  // Domestic Packages
   {
     id: "pkg-1",
     title: "Magical Kashmir & Gulmarg Paradise",
@@ -43,28 +44,6 @@ const PACKAGES_DATA = [
       "Day 6: Departure from Srinagar Airport"
     ],
     inclusions: ["Houseboat & Luxury Hotel Stay", "Daily Breakfast & Dinner", "All Internal Transfers by Private Cab", "Driver Allowances & Tolls"]
-  },
-  {
-    id: "pkg-2",
-    title: "Exotic Bali Beach & Temple Retreat",
-    category: "international",
-    badge: "Popular Pick",
-    duration: "7 Days / 6 Nights",
-    image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80",
-    overview: "Experience Ubud rice terraces, Uluwatu cliff sunset, Nusa Penida island tour, and luxury pool villa.",
-    totalCapacity: 12,
-    remainingSlots: 4,
-    price: 42999,
-    itinerary: [
-      "Day 1: Arrival in Bali, Transfer to Ubud Private Villa",
-      "Day 2: Kintamani Volcano, Rice Terrace & Swing Adventure",
-      "Day 3: Ubud Monkey Forest & Tanah Lot Temple Sunset",
-      "Day 4: Nusa Penida Full Day Island Speedboat Tour",
-      "Day 5: Transfer to Seminyak & Water Sports at Tanjung Benoa",
-      "Day 6: Uluwatu Temple & Kecak Dance Show with Seafood Dinner",
-      "Day 7: Leisure & Airport Transfer"
-    ],
-    inclusions: ["4-Star Hotel & Private Pool Villa", "Daily Buffet Breakfast & Dinners", "Nusa Penida Island Tour with Lunch", "Airport Transfers"]
   },
   {
     id: "pkg-3",
@@ -89,26 +68,6 @@ const PACKAGES_DATA = [
     inclusions: ["Heritage Hotel Stays", "Desert Camping with Folk Dance & Dinner", "Daily Breakfast", "Sightseeing Cab"]
   },
   {
-    id: "pkg-4",
-    title: "Dazzling Dubai & Abu Dhabi Extravaganza",
-    category: "international",
-    badge: "Trending",
-    duration: "5 Days / 4 Nights",
-    image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80",
-    overview: "Ascend Burj Khalifa 124th floor, Desert Safari with BBQ, Dhow Cruise, and Sheikh Zayed Grand Mosque.",
-    totalCapacity: 16,
-    remainingSlots: 2,
-    price: 54999,
-    itinerary: [
-      "Day 1: Arrival in Dubai & Marina Dhow Cruise Dinner",
-      "Day 2: Half-day City Tour & Burj Khalifa 124th Floor Observatory",
-      "Day 3: Dubai Frame & Thrilling Desert Safari with BBQ Dinner",
-      "Day 4: Full Day Abu Dhabi Tour & Sheikh Zayed Mosque & Louvre",
-      "Day 5: Shopping at Dubai Mall & Airport Departure"
-    ],
-    inclusions: ["4-Star Hotel Stay", "UAE Tourist Visa & Insurance", "Burj Khalifa & Desert Safari Tickets", "Airport Pick & Drop"]
-  },
-  {
     id: "pkg-5",
     title: "Kerala Backwaters & Munnar Hills",
     category: "domestic",
@@ -128,6 +87,155 @@ const PACKAGES_DATA = [
       "Day 6: Departure from Trivandrum Airport"
     ],
     inclusions: ["Resort & Houseboat Stay", "All Meals on Houseboat", "Daily Breakfast at Hotels", "Private AC Sedan Transfer"]
+  },
+  {
+    id: "pkg-7",
+    title: "Spiritual Gujarat - Dwarka & Somnath Yatra",
+    category: "domestic",
+    badge: "Gujarat Special",
+    duration: "5 Days / 4 Nights",
+    image: "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80",
+    overview: "Dwarkadhish Temple darshan, Nageshwar Jyotirlinga, Bet Dwarka boat ride, Somnath Temple light show, and Gir National Park.",
+    totalCapacity: 25,
+    remainingSlots: 8,
+    price: 13999,
+    itinerary: [
+      "Day 1: Arrival in Ahmedabad/Rajkot & Drive to Dwarka",
+      "Day 2: Dwarkadhish Temple, Bet Dwarka & Nageshwar Temple",
+      "Day 3: Drive to Porbandar (Kirti Mandir) & Somnath Temple",
+      "Day 4: Somnath Light & Sound Show, Drive to Sasan Gir",
+      "Day 5: Sasan Gir Jungle Safari & Departure from Rajkot"
+    ],
+    inclusions: ["3-Star Deluxe Hotels", "Pure Veg Breakfast & Dinner", "Dedicated Driver & AC Vehicle", "VIP Temple Darshan Assistance"]
+  },
+  {
+    id: "pkg-9",
+    title: "Himachal Snow Valleys - Shimla & Manali",
+    category: "domestic",
+    badge: "Popular Pick",
+    duration: "7 Days / 6 Nights",
+    image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80",
+    overview: "Mall Road Shimla, Kufri snow viewpoint, Solang Valley sports, Atal Tunnel, and Kasol Manikaran Sahib.",
+    totalCapacity: 18,
+    remainingSlots: 4,
+    price: 17499,
+    itinerary: [
+      "Day 1: Delhi/Chandigarh pick-up & Drive to Shimla",
+      "Day 2: Kufri Adventure Park & Shimla Ridge Walk",
+      "Day 3: Scenic Drive from Shimla to Manali via Kullu Valley",
+      "Day 4: Solang Valley Paragliding & Snow Activities",
+      "Day 5: Atal Tunnel Excursion & Sissu Lake Visit",
+      "Day 6: Kasol Cafe Hopping & Manikaran Sahib Hot Springs",
+      "Day 7: Drive back to Delhi/Chandigarh"
+    ],
+    inclusions: ["Valley View Deluxe Hotels", "Daily Breakfast & Dinner", "Private AC Cab Transfer", "Sightseeing & Tolls"]
+  },
+  {
+    id: "pkg-10",
+    title: "Golden Triangle - Delhi, Agra Taj Mahal & Jaipur",
+    category: "domestic",
+    badge: "Must Visit",
+    duration: "5 Days / 4 Nights",
+    image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80",
+    overview: "Explore India's most iconic heritage corridor featuring Qutub Minar, Agra Taj Mahal sunrise, and Amber Fort.",
+    totalCapacity: 20,
+    remainingSlots: 7,
+    price: 15999,
+    itinerary: [
+      "Day 1: Delhi Arrival & Red Fort, Qutub Minar Sightseeing",
+      "Day 2: Drive to Agra & Sunset View of Taj Mahal",
+      "Day 3: Sunrise Taj Mahal Visit, Agra Fort & Drive to Fatehpur Sikri to Jaipur",
+      "Day 4: Jaipur Amber Fort, Hawa Mahal & Jal Mahal",
+      "Day 5: Shopping at Johari Bazaar & Drop at Delhi Airport"
+    ],
+    inclusions: ["4-Star Heritage Hotels", "Daily Breakfast", "Monument Entry Assistance", "Private AC Sedan"]
+  },
+  {
+    id: "pkg-11",
+    title: "Leh Ladakh High Passes & Pangong Lake",
+    category: "domestic",
+    badge: "Adventure Special",
+    duration: "7 Days / 6 Nights",
+    image: "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&fit=crop&w=800&q=80",
+    overview: "Khardung La Pass (highest motorable road), Nubra Valley double-hump camel ride, Magnetic Hill, and Pangong Tso blue lake.",
+    totalCapacity: 12,
+    remainingSlots: 2,
+    price: 29999,
+    itinerary: [
+      "Day 1: Arrival at Leh Airport & Acclimatization Rest",
+      "Day 2: Leh Local Sightseeing - Shanti Stupa & Hall of Fame",
+      "Day 3: Leh to Nubra Valley via Khardung La Pass",
+      "Day 4: Diskit Monastery & Hunder Sand Dunes Camel Safari",
+      "Day 5: Nubra to Pangong Tso Lake via Shyok River Route",
+      "Day 6: Pangong Sunrise, Return to Leh via Chang La Pass",
+      "Day 7: Transfer to Leh Kushok Bakula Airport"
+    ],
+    inclusions: ["Oxygen Cylinder equipped SUV", "Luxury Camp & Hotel Stay", "Inner Line Permits", "Breakfast & Dinner Included"]
+  },
+  {
+    id: "pkg-12",
+    title: "Andaman Emerald Islands & Scuba Beach",
+    category: "domestic",
+    badge: "Island Getaway",
+    duration: "6 Days / 5 Nights",
+    image: "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80",
+    overview: "Port Blair Cellular Jail light show, Havelock Island Radhanagar Beach (Asia's best beach), and Elephant Beach snorkeling.",
+    totalCapacity: 14,
+    remainingSlots: 5,
+    price: 26999,
+    itinerary: [
+      "Day 1: Arrival in Port Blair & Cellular Jail Light & Sound Show",
+      "Day 2: High-speed Catamaran Cruise from Port Blair to Havelock",
+      "Day 3: Radhanagar Beach Sunset & Scuba Diving Experience",
+      "Day 4: Speedboat to Elephant Beach for Snorkeling & Water Sports",
+      "Day 5: Ferry to Neil Island (Bharatpur & Laxmanpur Beach) to Port Blair",
+      "Day 6: Airport Departure from Port Blair"
+    ],
+    inclusions: ["Beachfront Resort Stay", "Makruzz / Nautika Cruise Tickets", "Daily Buffet Breakfast", "All Island Airport Transfers"]
+  },
+
+  // International Packages
+  {
+    id: "pkg-2",
+    title: "Exotic Bali Beach & Temple Retreat",
+    category: "international",
+    badge: "Popular Pick",
+    duration: "7 Days / 6 Nights",
+    image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80",
+    overview: "Experience Ubud rice terraces, Uluwatu cliff sunset, Nusa Penida island tour, and luxury pool villa.",
+    totalCapacity: 12,
+    remainingSlots: 4,
+    price: 42999,
+    itinerary: [
+      "Day 1: Arrival in Bali, Transfer to Ubud Private Villa",
+      "Day 2: Kintamani Volcano, Rice Terrace & Swing Adventure",
+      "Day 3: Ubud Monkey Forest & Tanah Lot Temple Sunset",
+      "Day 4: Nusa Penida Full Day Island Speedboat Tour",
+      "Day 5: Transfer to Seminyak & Water Sports at Tanjung Benoa",
+      "Day 6: Uluwatu Temple & Kecak Dance Show with Seafood Dinner",
+      "Day 7: Leisure & Airport Transfer"
+    ],
+    inclusions: ["4-Star Hotel & Private Pool Villa", "Daily Buffet Breakfast & Dinners", "Nusa Penida Island Tour with Lunch", "Airport Transfers"]
+  },
+  {
+    id: "pkg-4",
+    title: "Dazzling Dubai & Abu Dhabi Extravaganza",
+    category: "international",
+    badge: "Trending",
+    duration: "5 Days / 4 Nights",
+    image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80",
+    overview: "Ascend Burj Khalifa 124th floor, Desert Safari with BBQ, Dhow Cruise, and Sheikh Zayed Grand Mosque.",
+    totalCapacity: 16,
+    remainingSlots: 2,
+    price: 54999,
+    itinerary: [
+      "Day 1: Arrival in Dubai & Marina Dhow Cruise Dinner",
+      "Day 2: Half-day City Tour & Burj Khalifa 124th Floor Observatory",
+      "Day 3: Dubai Frame & Thrilling Desert Safari with BBQ Dinner",
+      "Day 4: Full Day Abu Dhabi Tour & Sheikh Zayed Mosque & Louvre",
+      "Day 5: Shopping at Dubai Mall & Airport Departure"
+    ],
+    inclusions: ["4-Star Hotel Stay", "UAE Tourist Visa & Insurance", "Burj Khalifa & Desert Safari Tickets", "Airport Pick & Drop"]
   },
   {
     id: "pkg-6",
@@ -152,26 +260,6 @@ const PACKAGES_DATA = [
     inclusions: ["5-Star Halong Bay Cruise Stay", "4-Star Hotels in Hanoi & Da Nang", "Domestic Flight Hanoi to Da Nang", "All Entrance Tickets & Meals"]
   },
   {
-    id: "pkg-7",
-    title: "Spiritual Gujarat - Dwarka & Somnath Yatra",
-    category: "domestic",
-    badge: "Gujarat Special",
-    duration: "5 Days / 4 Nights",
-    image: "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80",
-    overview: "Dwarkadhish Temple darshan, Nageshwar Jyotirlinga, Bet Dwarka boat ride, Somnath Temple light show, and Gir National Park.",
-    totalCapacity: 25,
-    remainingSlots: 8,
-    price: 13999,
-    itinerary: [
-      "Day 1: Arrival in Ahmedabad/Rajkot & Drive to Dwarka",
-      "Day 2: Dwarkadhish Temple, Bet Dwarka & Nageshwar Temple",
-      "Day 3: Drive to Porbandar (Kirti Mandir) & Somnath Temple",
-      "Day 4: Somnath Light & Sound Show, Drive to Sasan Gir",
-      "Day 5: Sasan Gir Jungle Safari & Departure from Rajkot"
-    ],
-    inclusions: ["3-Star Deluxe Hotels", "Pure Veg Breakfast & Dinner", "Dedicated Driver & AC Vehicle", "VIP Temple Darshan Assistance"]
-  },
-  {
     id: "pkg-8",
     title: "Enchanting Thailand - Phuket & Krabi",
     category: "international",
@@ -191,24 +279,116 @@ const PACKAGES_DATA = [
       "Day 6: Departure from Krabi Airport"
     ],
     inclusions: ["Beachfront Resort Stay", "Island Speedboat Tours with Lunch", "Daily Buffet Breakfast", "All Transfers"]
+  },
+  {
+    id: "pkg-13",
+    title: "Singapore & Sentosa Island Fantasy",
+    category: "international",
+    badge: "Family Special",
+    duration: "5 Days / 4 Nights",
+    image: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80",
+    overview: "Universal Studios Singapore, Gardens by the Bay Light Show, Night Safari, and Cable Car to Sentosa.",
+    totalCapacity: 15,
+    remainingSlots: 3,
+    price: 58999,
+    itinerary: [
+      "Day 1: Arrival at Changi Airport & Night Safari Tram Ride",
+      "Day 2: City Tour, Merlion Park & Gardens by the Bay Supertree Light Show",
+      "Day 3: Full Day Universal Studios Singapore Rides & Shows",
+      "Day 4: Cable Car Ride to Sentosa Island, S.E.A Aquarium & Wings of Time",
+      "Day 5: Jewel Changi Rain Vortex Sightseeing & Flight Departure"
+    ],
+    inclusions: ["4-Star Hotel Stay", "Universal Studios & Sentosa Tickets", "Singapore Tourist Visa", "Daily Breakfast"]
+  },
+  {
+    id: "pkg-14",
+    title: "Maldives Luxury Overwater Bungalow Escape",
+    category: "international",
+    badge: "Honeymoon Special",
+    duration: "5 Days / 4 Nights",
+    image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80",
+    overview: "Stay in luxury overwater villas, private speedboat transfers, sunset dolphin cruise, and snorkeling reefs.",
+    totalCapacity: 10,
+    remainingSlots: 2,
+    price: 79999,
+    itinerary: [
+      "Day 1: Male Airport Arrival & Speedboat Transfer to Private Island Resort",
+      "Day 2: Ocean Villa Relaxation & Coral Reef Snorkeling",
+      "Day 3: Sunset Dolphin Cruise with Champagne",
+      "Day 4: Water Sports Adventure - Kayaking & Jet Skiing",
+      "Day 5: Farewell Breakfast & Speedboat Transfer to Airport"
+    ],
+    inclusions: ["Overwater Villa Stay", "All Inclusive Meals & Drinks", "Speedboat Airport Transfers", "Green Tax Included"]
+  },
+  {
+    id: "pkg-15",
+    title: "European Dream - Paris, Swiss Alps & Venice",
+    category: "international",
+    badge: "Grand Tour",
+    duration: "10 Days / 9 Nights",
+    image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80",
+    overview: "Eiffel Tower top level, Seine River cruise, Swiss Mt. Titlis cable car, Lucerne lake, and Venice Gondola ride.",
+    totalCapacity: 16,
+    remainingSlots: 4,
+    price: 145999,
+    itinerary: [
+      "Day 1: Arrival in Paris & Eiffel Tower Illumination Tour",
+      "Day 2: Louvre Museum & Seine River Cruise",
+      "Day 3: Paris to Switzerland (Zurich/Lucerne) via Scenic TGV Train",
+      "Day 4: Mount Titlis Rotair Cable Car & Ice Flyer",
+      "Day 5: Jungfraujoch Top of Europe Day Tour",
+      "Day 6: Scenic Drive through Swiss Alps into Italy (Milan)",
+      "Day 7: Venice Island Gondola Ride & St. Mark's Square",
+      "Day 8: Florence Duomo & Leaning Tower of Pisa",
+      "Day 9: Rome Colosseum & Vatican City Tour",
+      "Day 10: Departure from Rome Airport"
+    ],
+    inclusions: ["4-Star Hotel Stays", "Schengen Visa Assistance", "High Speed Train & Coach Transfers", "Daily Breakfast & Dinners"]
+  },
+  {
+    id: "pkg-16",
+    title: "Japan Cherry Blossom & Tokyo Explorer",
+    category: "international",
+    badge: "Trending",
+    duration: "7 Days / 6 Nights",
+    image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80",
+    overview: "Tokyo Shibuya Crossing, Mount Fuji 5th Station, Kyoto Fushimi Inari Shrine, and Bullet Train Shinkansen experience.",
+    totalCapacity: 12,
+    remainingSlots: 3,
+    price: 119999,
+    itinerary: [
+      "Day 1: Arrival in Tokyo Haneda/Narita & Shinjuku Night Tour",
+      "Day 2: Tokyo Skytree, Sensoji Temple & Shibuya Crossing",
+      "Day 3: Day Trip to Mount Fuji & Lake Kawaguchiko Ropeway",
+      "Day 4: Ride Shinkansen Bullet Train to Kyoto",
+      "Day 5: Fushimi Inari 10,000 Torii Gates & Arashiyama Bamboo Grove",
+      "Day 6: Nara Deer Park & Osaka Dotonbori Street Food",
+      "Day 7: Flight Departure from Osaka Kansai Airport"
+    ],
+    inclusions: ["4-Star Hotels", "JR Pass Bullet Train Ticket", "Japan Tourist Visa", "All Entrance Tickets & Tours"]
   }
 ];
 
-// Gujarat 13 Branch Offices Dataset
+// Branch Offices Across India (Clean name & state representation)
 const BRANCHES_DATA = [
-  { name: "Anand Central Branch", city: "Anand", address: "Shop 104, Super Mall, Near Grid Cross Road, Anand - 388001", phone: CONFIG.DISPLAY_PHONE, maps: "https://maps.google.com" },
-  { name: "Surat Ring Road Branch", city: "Surat", address: "202, Millennium Plaza, Opposite Resham Bhavan, Ring Road, Surat - 395002", phone: CONFIG.DISPLAY_PHONE, maps: "https://maps.google.com" },
-  { name: "Navsari Station Road Office", city: "Navsari", address: "SF-12, Royal Complex, Station Road, Navsari - 396445", phone: CONFIG.DISPLAY_PHONE, maps: "https://maps.google.com" },
-  { name: "Vapi GIDC Hub", city: "Vapi", address: "Office 15, Fortune Galaxy, Near Koparli Road, Vapi - 396191", phone: CONFIG.DISPLAY_PHONE, maps: "https://maps.google.com" },
-  { name: "Valsad College Road Office", city: "Valsad", address: "101, Shrimad Bhavan, College Road, Valsad - 396001", phone: CONFIG.DISPLAY_PHONE, maps: "https://maps.google.com" },
-  { name: "Nadiad Bus Stand Branch", city: "Nadiad", address: "Shop 8, City Center, Near ST Bus Station, Nadiad - 387001", phone: CONFIG.DISPLAY_PHONE, maps: "https://maps.google.com" },
-  { name: "Jambusar Main Branch", city: "Jambusar", address: "Opp. SBI Bank, Station Road, Jambusar - 392150", phone: CONFIG.DISPLAY_PHONE, maps: "https://maps.google.com" },
-  { name: "Ahmedabad SG Highway Office", city: "Ahmedabad", address: "405, Mondeal Heights, Near Iscon Circle, SG Highway, Ahmedabad - 380015", phone: CONFIG.DISPLAY_PHONE, maps: "https://maps.google.com" },
-  { name: "Rajkot Kalawad Road Branch", city: "Rajkot", address: "Shop 12, Crystal Mall Annex, Kalawad Road, Rajkot - 360005", phone: CONFIG.DISPLAY_PHONE, maps: "https://maps.google.com" },
-  { name: "Bhavnagar Waghawadi Office", city: "Bhavnagar", address: "108, Silver Arcade, Waghawadi Road, Bhavnagar - 364001", phone: CONFIG.DISPLAY_PHONE, maps: "https://maps.google.com" },
-  { name: "Dwarka Temple Gate Branch", city: "Dwarka", address: "Near Dhirubhai Ambani Marg, DWK Temple Zone, Dwarka - 361335", phone: CONFIG.DISPLAY_PHONE, maps: "https://maps.google.com" },
-  { name: "Bharuch Zadeshwar Road Office", city: "Bharuch", address: "201, Pancham Icon, Zadeshwar Road, Bharuch - 392011", phone: CONFIG.DISPLAY_PHONE, maps: "https://maps.google.com" },
-  { name: "Vadodara Alkapuri Branch", city: "Vadodara", address: "303, Windsor Plaza, RC Dutt Road, Alkapuri, Vadodara - 390007", phone: CONFIG.DISPLAY_PHONE, maps: "https://maps.google.com" }
+  { name: "Mumbai Branch", state: "Maharashtra", type: "Metro Hub", code: "BOM" },
+  { name: "Bengaluru Branch", state: "Karnataka", type: "Metro Hub", code: "BLR" },
+  { name: "Kolkata Branch", state: "West Bengal", type: "Metro Hub", code: "CCU" },
+  { name: "Pune Branch", state: "Maharashtra", type: "Commercial Hub", code: "PNQ" },
+  { name: "Tamil Nadu Branch (Chennai)", state: "Tamil Nadu", type: "Metro Hub", code: "MAA" },
+  { name: "Ahmedabad Branch", state: "Gujarat", type: "Regional HQ", code: "AMD" },
+  { name: "Surat Branch", state: "Gujarat", type: "Executive Hub", code: "STV" },
+  { name: "Vadodara Branch", state: "Gujarat", type: "Executive Hub", code: "BDQ" },
+  { name: "Rajkot Branch", state: "Gujarat", type: "Executive Center", code: "RAJ" },
+  { name: "Anand Central Branch", state: "Gujarat", type: "Central HQ", code: "QFD" },
+  { name: "Navsari Branch", state: "Gujarat", type: "Executive Center", code: "NVS" },
+  { name: "Vapi Branch", state: "Gujarat", type: "Industrial Hub", code: "VAPI" },
+  { name: "Valsad Branch", state: "Gujarat", type: "Executive Center", code: "VSD" },
+  { name: "Nadiad Branch", state: "Gujarat", type: "Executive Center", code: "NDD" },
+  { name: "Bhavnagar Branch", state: "Gujarat", type: "Executive Center", code: "BHU" },
+  { name: "Dwarka Branch", state: "Gujarat", type: "Pilgrimage Center", code: "DWK" },
+  { name: "Bharuch Branch", state: "Gujarat", type: "Executive Center", code: "BH" },
+  { name: "Jambusar Branch", state: "Gujarat", type: "Executive Center", code: "JMB" }
 ];
 
 // Initialize Application Engine
@@ -218,6 +398,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderPackageCards("all");
   initPackageFilters();
   renderBranchOffices(BRANCHES_DATA);
+  initRegionFilterBtns();
   initBranchSearch();
   initCabCalculator();
   initReviewsCarousel();
@@ -386,43 +567,64 @@ function closePackageModal() {
   if (modal) modal.classList.remove("active");
 }
 
-// Interactive Gujarat Branch Directory & Live Search
+// Render Ultra-Professional Executive Branch Offices Across India (Name & State Badge ONLY)
 function renderBranchOffices(branches) {
   const grid = document.getElementById("officesGrid");
+  const countBadge = document.getElementById("branchCountBadge");
   if (!grid) return;
 
+  if (countBadge) {
+    countBadge.innerText = `${branches.length} Active Centers`;
+  }
+
   if (branches.length === 0) {
-    grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 2rem;">No branch offices matching your search.</div>`;
+    grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 3rem 1rem; background: #ffffff; border-radius: var(--radius-lg); border: 1px dashed var(--border-light);">No executive branch centers matching your search.</div>`;
     return;
   }
 
   grid.innerHTML = branches.map(office => {
-    const waMsg = `Hi Rutva Tours & Travels, I am contacting your ${office.name} office (${office.city}). I need assistance with travel booking.`;
+    const waMsg = `Hi Rutva Tours & Travels, I am inquiring about your ${office.name} (${office.state}). Please connect me with your travel consultant at this center.`;
     return `
-      <div class="office-card">
-        <div>
-          <span class="office-badge"><i class="fas fa-map-marker-alt"></i> ${office.city} Office</span>
-          <h3 class="office-name">${office.name}</h3>
-          <div class="office-address">
+      <div class="pro-branch-card">
+        <div class="pro-branch-header">
+          <div class="pro-branch-icon">
             <i class="fas fa-building"></i>
-            <span>${office.address}</span>
           </div>
-          <div class="office-phone">
-            <i class="fas fa-phone-alt" style="color: var(--secondary-hover);"></i>
-            <a href="tel:${CONFIG.TEL_NUMBER}" style="color: inherit; text-decoration: none;">${office.phone}</a>
+          <div>
+            <span class="pro-branch-state">${office.state}</span>
+            <h3 class="pro-branch-name">${office.name}</h3>
           </div>
         </div>
-        <div class="office-actions">
-          <a href="tel:${CONFIG.TEL_NUMBER}" class="btn btn-outline">
-            <i class="fas fa-phone"></i> Call
-          </a>
-          <a href="${buildWhatsAppUrl(waMsg)}" target="_blank" class="btn btn-whatsapp">
-            <i class="fab fa-whatsapp"></i> Chat
+        
+        <div class="pro-branch-footer">
+          <span class="pro-branch-tag"><i class="fas fa-certificate"></i> ${office.type}</span>
+          <a href="${buildWhatsAppUrl(waMsg)}" target="_blank" class="pro-branch-btn">
+            <i class="fab fa-whatsapp"></i> Inquire
           </a>
         </div>
       </div>
     `;
   }).join("");
+}
+
+// Region Filter Chips Listener
+function initRegionFilterBtns() {
+  const regionBtns = document.querySelectorAll(".region-chip");
+  regionBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      regionBtns.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      const region = btn.dataset.region;
+
+      if (region === "all") {
+        renderBranchOffices(BRANCHES_DATA);
+      } else if (region === "metros") {
+        renderBranchOffices(BRANCHES_DATA.filter(b => ["Mumbai Branch", "Bengaluru Branch", "Kolkata Branch", "Pune Branch", "Tamil Nadu Branch (Chennai)"].includes(b.name)));
+      } else if (region === "gujarat") {
+        renderBranchOffices(BRANCHES_DATA.filter(b => b.state === "Gujarat"));
+      }
+    });
+  });
 }
 
 function initBranchSearch() {
@@ -433,8 +635,8 @@ function initBranchSearch() {
     const term = e.target.value.toLowerCase().trim();
     const filtered = BRANCHES_DATA.filter(b => 
       b.name.toLowerCase().includes(term) || 
-      b.city.toLowerCase().includes(term) || 
-      b.address.toLowerCase().includes(term)
+      b.state.toLowerCase().includes(term) ||
+      b.type.toLowerCase().includes(term)
     );
     renderBranchOffices(filtered);
   });
