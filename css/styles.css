@@ -1207,7 +1207,8 @@ img {
   transition: var(--transition);
 }
 
-.region-chip.active, .region-chip:hover {
+.region-chip.active,
+.region-chip:hover {
   background-color: var(--primary);
   color: #ffffff;
   border-color: var(--primary);
@@ -1405,7 +1406,7 @@ img {
   font-weight: 800;
   letter-spacing: 0.5px;
   white-space: nowrap;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.2);
   transition: all 0.25s ease;
   pointer-events: none;
@@ -1426,10 +1427,12 @@ img {
     font-size: 0.6rem;
     padding: 0.15rem 0.35rem;
   }
+
   .pin-marker-head {
     width: 22px;
     height: 22px;
   }
+
   .pin-marker-head i {
     font-size: 0.6rem;
   }
@@ -1484,11 +1487,22 @@ img {
   color: var(--secondary);
   transform: scale(1.25);
 }
+
+.pro-branch-btn {
+  display: inline-flex;
   align-items: center;
   gap: 0.4rem;
+  padding: 0.5rem 0.9rem;
+  background-color: var(--whatsapp-green);
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
   transition: var(--transition);
   box-shadow: 0 3px 8px rgba(37, 211, 102, 0.25);
 }
+
 
 .pro-branch-btn:hover {
   background-color: var(--whatsapp-hover);
@@ -2037,6 +2051,7 @@ img {
     opacity: 0;
     transform: translateY(-8px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
