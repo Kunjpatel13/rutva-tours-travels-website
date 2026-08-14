@@ -172,27 +172,27 @@ const PACKAGES_DATA = [
     ],
     inclusions: ["Oxygen Cylinder equipped SUV", "Luxury Camp & Hotel Stay", "Inner Line Permits", "Breakfast & Dinner Included"]
   },
-  {
-    id: "pkg-12",
-    title: "Andaman Emerald Islands & Scuba Beach",
-    category: "domestic",
-    badge: "Island Getaway",
-    duration: "6 Days / 5 Nights",
-    image: "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80",
-    overview: "Port Blair Cellular Jail light show, Havelock Island Radhanagar Beach (Asia's best beach), and Elephant Beach snorkeling.",
-    totalCapacity: 14,
-    remainingSlots: 5,
-    price: 26999,
-    itinerary: [
-      "Day 1: Arrival in Port Blair & Cellular Jail Light & Sound Show",
-      "Day 2: High-speed Catamaran Cruise from Port Blair to Havelock",
-      "Day 3: Radhanagar Beach Sunset & Scuba Diving Experience",
-      "Day 4: Speedboat to Elephant Beach for Snorkeling & Water Sports",
-      "Day 5: Ferry to Neil Island (Bharatpur & Laxmanpur Beach) to Port Blair",
-      "Day 6: Airport Departure from Port Blair"
-    ],
-    inclusions: ["Beachfront Resort Stay", "Makruzz / Nautika Cruise Tickets", "Daily Buffet Breakfast", "All Island Airport Transfers"]
-  },
+  // {
+  //   id: "pkg-12",
+  //   title: "Andaman Emerald Islands & Scuba Beach",
+  //   category: "domestic",
+  //   badge: "Island Getaway",
+  //   duration: "6 Days / 5 Nights",
+  //   image: "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80",
+  //   overview: "Port Blair Cellular Jail light show, Havelock Island Radhanagar Beach (Asia's best beach), and Elephant Beach snorkeling.",
+  //   totalCapacity: 14,
+  //   remainingSlots: 5,
+  //   price: 26999,
+  //   itinerary: [
+  //     "Day 1: Arrival in Port Blair & Cellular Jail Light & Sound Show",
+  //     "Day 2: High-speed Catamaran Cruise from Port Blair to Havelock",
+  //     "Day 3: Radhanagar Beach Sunset & Scuba Diving Experience",
+  //     "Day 4: Speedboat to Elephant Beach for Snorkeling & Water Sports",
+  //     "Day 5: Ferry to Neil Island (Bharatpur & Laxmanpur Beach) to Port Blair",
+  //     "Day 6: Airport Departure from Port Blair"
+  //   ],
+  //   inclusions: ["Beachfront Resort Stay", "Makruzz / Nautika Cruise Tickets", "Daily Buffet Breakfast", "All Island Airport Transfers"]
+  // },
 
   // International Packages
   {
@@ -370,29 +370,32 @@ const PACKAGES_DATA = [
 ];
 
 // Branch Offices Across India (Clean name & state representation)
+// Branch Offices Across India (With visual map pin positioning data)
 const BRANCHES_DATA = [
-  { name: "Mumbai Branch", state: "Maharashtra", type: "Metro Hub", code: "BOM" },
-  { name: "Bengaluru Branch", state: "Karnataka", type: "Metro Hub", code: "BLR" },
-  { name: "Kolkata Branch", state: "West Bengal", type: "Metro Hub", code: "CCU" },
-  { name: "Pune Branch", state: "Maharashtra", type: "Commercial Hub", code: "PNQ" },
-  { name: "Tamil Nadu Branch (Chennai)", state: "Tamil Nadu", type: "Metro Hub", code: "MAA" },
-  { name: "Ahmedabad Branch", state: "Gujarat", type: "Regional HQ", code: "AMD" },
-  { name: "Surat Branch", state: "Gujarat", type: "Executive Hub", code: "STV" },
-  { name: "Vadodara Branch", state: "Gujarat", type: "Executive Hub", code: "BDQ" },
-  { name: "Rajkot Branch", state: "Gujarat", type: "Executive Center", code: "RAJ" },
-  { name: "Anand Central Branch", state: "Gujarat", type: "Central HQ", code: "QFD" },
-  { name: "Navsari Branch", state: "Gujarat", type: "Executive Center", code: "NVS" },
-  { name: "Vapi Branch", state: "Gujarat", type: "Industrial Hub", code: "VAPI" },
-  { name: "Valsad Branch", state: "Gujarat", type: "Executive Center", code: "VSD" },
-  { name: "Nadiad Branch", state: "Gujarat", type: "Executive Center", code: "NDD" },
-  { name: "Bhavnagar Branch", state: "Gujarat", type: "Executive Center", code: "BHU" },
-  { name: "Dwarka Branch", state: "Gujarat", type: "Pilgrimage Center", code: "DWK" },
-  { name: "Bharuch Branch", state: "Gujarat", type: "Executive Center", code: "BH" },
-  { name: "Jambusar Branch", state: "Gujarat", type: "Executive Center", code: "JMB" }
+  { name: "Mumbai Branch", shortName: "MUMBAI", state: "Maharashtra", type: "Metro Hub", code: "BOM", top: 62, left: 24, align: "right" },
+  { name: "Bengaluru Branch", shortName: "BENGALURU", state: "Karnataka", type: "Metro Hub", code: "BLR", top: 77, left: 35, align: "right" },
+  { name: "Kolkata Branch", shortName: "KOLKATA", state: "West Bengal", type: "Metro Hub", code: "CCU", top: 46, left: 75, align: "right" },
+  { name: "Pune Branch", shortName: "PUNE", state: "Maharashtra", type: "Commercial Hub", code: "PNQ", top: 64, left: 29, align: "right" },
+  { name: "Tamil Nadu Branch (Chennai)", shortName: "CHENNAI", state: "Tamil Nadu", type: "Metro Hub", code: "MAA", top: 80, left: 42, align: "right" },
+  { name: "Ahmedabad Branch", shortName: "AHMEDABAD", state: "Gujarat", type: "Regional HQ", code: "AMD", top: 42, left: 20, align: "right" },
+  { name: "Surat Branch", shortName: "SURAT", state: "Gujarat", type: "Executive Hub", code: "STV", top: 54, left: 23, align: "right" },
+  { name: "Vadodara Branch", shortName: "VADODARA", state: "Gujarat", type: "Executive Hub", code: "BDQ", top: 48.5, left: 23.5, align: "right" },
+  { name: "Rajkot Branch", shortName: "RAJKOT", state: "Gujarat", type: "Executive Center", code: "RAJ", top: 45.5, left: 14, align: "left" },
+  { name: "Anand Central Branch", shortName: "ANAND", state: "Gujarat", type: "Central HQ", code: "QFD", top: 46.5, left: 22.5, align: "right" },
+  { name: "Navsari Branch", shortName: "NAVSARI", state: "Gujarat", type: "Executive Center", code: "NVS", top: 56, left: 23.5, align: "right" },
+  { name: "Vapi Branch", shortName: "VAPI", state: "Gujarat", type: "Industrial Hub", code: "VAPI", top: 59, left: 24.5, align: "right" },
+  { name: "Valsad Branch", shortName: "VALSAD", state: "Gujarat", type: "Executive Center", code: "VSD", top: 57.5, left: 24, align: "left" },
+  { name: "Nadiad Branch", shortName: "NADIAD", state: "Gujarat", type: "Executive Center", code: "NDD", top: 44.5, left: 21.5, align: "left" },
+  { name: "Bhavnagar Branch", shortName: "BHAVNAGAR", state: "Gujarat", type: "Executive Center", code: "BHU", top: 49.5, left: 17.5, align: "left" },
+  { name: "Dwarka Branch", shortName: "DWARKA", state: "Gujarat", type: "Pilgrimage Center", code: "DWK", top: 43, left: 9, align: "left" },
+  { name: "Bharuch Branch", shortName: "BHARUCH", state: "Gujarat", type: "Executive Center", code: "BH", top: 51.5, left: 23, align: "right" },
+  { name: "Jambusar Branch", shortName: "JAMBUSAR", state: "Gujarat", type: "Executive Center", code: "JMB", top: 50, left: 21, align: "left" }
 ];
 
 // Initialize Application Engine
 document.addEventListener("DOMContentLoaded", () => {
+  initMobileNav();
+  initScrollTopBtn();
   initHeroSlider();
   initSearchTabs();
   renderPackageCards("all");
@@ -400,6 +403,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderBranchOffices(BRANCHES_DATA);
   initRegionFilterBtns();
   initBranchSearch();
+  initMapViewToggle();
   initCabCalculator();
   initReviewsCarousel();
   initWhatsAppCTAListeners();
@@ -567,42 +571,54 @@ function closePackageModal() {
   if (modal) modal.classList.remove("active");
 }
 
-// Render Ultra-Professional Executive Branch Offices Across India (Name & State Badge ONLY)
+// Render Organic Scattered Location Chips Across Section (No WhatsApp logo, Direct WhatsApp click)
 function renderBranchOffices(branches) {
   const grid = document.getElementById("officesGrid");
   const countBadge = document.getElementById("branchCountBadge");
-  if (!grid) return;
 
   if (countBadge) {
-    countBadge.innerText = `${branches.length} Active Centers`;
+    countBadge.innerText = `${branches.length} Locations`;
   }
 
+  if (!grid) return;
+
   if (branches.length === 0) {
-    grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 3rem 1rem; background: #ffffff; border-radius: var(--radius-lg); border: 1px dashed var(--border-light);">No executive branch centers matching your search.</div>`;
+    grid.innerHTML = `<div style="text-align: center; color: var(--text-muted); padding: 2rem 1rem; width: 100%;">No locations matching your search.</div>`;
     return;
   }
 
-  grid.innerHTML = branches.map(office => {
-    const waMsg = `Hi Rutva Tours & Travels, I am inquiring about your ${office.name} (${office.state}). Please connect me with your travel consultant at this center.`;
+  const STAGGER_PATTERNS = [
+    { rot: -1.5, translateY: -3 },
+    { rot: 1.2, translateY: 5 },
+    { rot: -0.8, translateY: -2 },
+    { rot: 2.1, translateY: 4 },
+    { rot: -1.8, translateY: 2 },
+    { rot: 1.5, translateY: -4 },
+    { rot: -0.5, translateY: 3 },
+    { rot: 2.5, translateY: -3 },
+    { rot: -2.0, translateY: 4 },
+    { rot: 1.0, translateY: -2 },
+    { rot: -1.2, translateY: 3 },
+    { rot: 1.8, translateY: -5 },
+    { rot: -0.9, translateY: 2 },
+    { rot: 2.2, translateY: -4 },
+    { rot: -1.7, translateY: 4 },
+    { rot: 1.1, translateY: -2 },
+    { rot: -2.3, translateY: 3 },
+    { rot: 1.6, translateY: -4 }
+  ];
+
+  grid.innerHTML = branches.map((office, idx) => {
+    const pattern = STAGGER_PATTERNS[idx % STAGGER_PATTERNS.length];
+    const displayName = office.shortName || office.name.replace(" Branch", "");
+    const waMsg = `Hi Rutva Tours & Travels - ${office.name}`;
+    const waUrl = buildWhatsAppUrl(waMsg);
+
     return `
-      <div class="pro-branch-card">
-        <div class="pro-branch-header">
-          <div class="pro-branch-icon">
-            <i class="fas fa-building"></i>
-          </div>
-          <div>
-            <span class="pro-branch-state">${office.state}</span>
-            <h3 class="pro-branch-name">${office.name}</h3>
-          </div>
-        </div>
-        
-        <div class="pro-branch-footer">
-          <span class="pro-branch-tag"><i class="fas fa-certificate"></i> ${office.type}</span>
-          <a href="${buildWhatsAppUrl(waMsg)}" target="_blank" class="pro-branch-btn">
-            <i class="fab fa-whatsapp"></i> Inquire
-          </a>
-        </div>
-      </div>
+      <a href="${waUrl}" target="_blank" class="scatter-location-chip" style="transform: rotate(${pattern.rot}deg) translateY(${pattern.translateY}px);" title="Click to inquire for ${office.name}">
+        <i class="fas fa-map-marker-alt"></i>
+        <span class="scatter-location-name">${displayName}</span>
+      </a>
     `;
   }).join("");
 }
@@ -633,12 +649,37 @@ function initBranchSearch() {
 
   searchInput.addEventListener("input", (e) => {
     const term = e.target.value.toLowerCase().trim();
-    const filtered = BRANCHES_DATA.filter(b => 
-      b.name.toLowerCase().includes(term) || 
+    const filtered = BRANCHES_DATA.filter(b =>
+      b.name.toLowerCase().includes(term) ||
       b.state.toLowerCase().includes(term) ||
+      (b.shortName && b.shortName.toLowerCase().includes(term)) ||
       b.type.toLowerCase().includes(term)
     );
     renderBranchOffices(filtered);
+  });
+}
+
+// Map View vs Grid View Toggle
+function initMapViewToggle() {
+  const mapBtn = document.getElementById("viewMapBtn");
+  const gridBtn = document.getElementById("viewGridBtn");
+  const mapContainer = document.getElementById("mapViewContainer");
+  const officesGrid = document.getElementById("officesGrid");
+
+  if (!mapBtn || !gridBtn) return;
+
+  mapBtn.addEventListener("click", () => {
+    mapBtn.classList.add("active");
+    gridBtn.classList.remove("active");
+    if (mapContainer) mapContainer.style.display = "block";
+    if (officesGrid) officesGrid.style.display = "none";
+  });
+
+  gridBtn.addEventListener("click", () => {
+    gridBtn.classList.add("active");
+    mapBtn.classList.remove("active");
+    if (mapContainer) mapContainer.style.display = "none";
+    if (officesGrid) officesGrid.style.display = "grid";
   });
 }
 
@@ -698,6 +739,65 @@ function initWhatsAppCTAListeners() {
       e.preventDefault();
       const topic = btn.dataset.waTopic || "Travel Inquiry";
       window.open(buildWhatsAppUrl(`Hi Rutva Tours & Travels, I am interested in ${topic}. Please share complete details.`), "_blank");
+    });
+  });
+}
+
+// Mobile Navigation Toggle
+function initMobileNav() {
+  const toggleBtn = document.querySelector(".mobile-toggle");
+  const navLinks = document.querySelector(".nav-links");
+  if (!toggleBtn || !navLinks) return;
+
+  toggleBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    navLinks.classList.toggle("active");
+    const icon = toggleBtn.querySelector("i");
+    if (icon) {
+      if (navLinks.classList.contains("active")) {
+        icon.className = "fas fa-times";
+      } else {
+        icon.className = "fas fa-bars";
+      }
+    }
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!toggleBtn.contains(e.target) && !navLinks.contains(e.target)) {
+      if (navLinks.classList.contains("active")) {
+        navLinks.classList.remove("active");
+        const icon = toggleBtn.querySelector("i");
+        if (icon) icon.className = "fas fa-bars";
+      }
+    }
+  });
+
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+      const icon = toggleBtn.querySelector("i");
+      if (icon) icon.className = "fas fa-bars";
+    });
+  });
+}
+
+// Floating Auto Scroll to Top Button Logic
+function initScrollTopBtn() {
+  const scrollBtn = document.getElementById("scrollTopBtn");
+  if (!scrollBtn) return;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 350) {
+      scrollBtn.classList.add("visible");
+    } else {
+      scrollBtn.classList.remove("visible");
+    }
+  });
+
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
     });
   });
 }

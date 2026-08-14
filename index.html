@@ -39,13 +39,21 @@
           </a>
         </span>
         <span>
-          <a href="mailto:rutvamultiservices@gmail.com"
-            style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 0.4rem;">
+          <a href="mailto:rutvamultiservices@gmail.com?subject=Travel%20Inquiry%20-%20Rutva%20Tours"
+            style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 0.4rem;"
+            title="Send Email">
             <i class="fas fa-envelope"></i> rutvamultiservices@gmail.com
           </a>
         </span>
-        <span><i class="fas fa-map-marker-alt"></i>203, H M Patel Trade center, Mota bazar, V V Nagar, Anand,
-          Gujarat-388120</span>
+        <span>
+          <a href="https://maps.google.com/?q=203,+H+M+Patel+Trade+center,+Mota+bazar,+V+V+Nagar,+Anand,+Gujarat-388120"
+            target="_blank" rel="noopener noreferrer"
+            style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 0.4rem;"
+            title="Open Location in Google Maps">
+            <i class="fas fa-map-marker-alt"></i> 203, H M Patel Trade center, Mota bazar, V V Nagar, Anand,
+            Gujarat-388120
+          </a>
+        </span>
       </div>
       <div class="top-info">
         <span>
@@ -69,11 +77,11 @@
       <nav>
         <ul class="nav-links">
           <li><a href="#" class="active">Home</a></li>
-          <li><a href="#packages">Domestic Tours</a></li>
-          <li><a href="#packages">International Tours</a></li>
+          <li><a href="#packages">Domestic & International Tours</a></li>
           <li><a href="#cabs">Cab Booking</a></li>
           <li><a href="#group-travel">Group Travel</a></li>
           <li><a href="#offices">Branch Offices</a></li>
+          <!-- <li><a href="#owner-details">Owner Details</a></li> -->
           <li><a href="#reviews">Reviews</a></li>
         </ul>
       </nav>
@@ -420,13 +428,13 @@
                 <div style="font-size: 0.8rem; color: #cbd5e1;">Save up to 25% on group package bookings</div>
               </div>
             </div>
-            <div class="perk-box">
+            <!-- <div class="perk-box">
               <i class="fas fa-bus-alt"></i>
               <div>
                 <strong>Private Fleet</strong>
                 <div style="font-size: 0.8rem; color: #cbd5e1;">Dedicated buses and Tempo Travellers</div>
               </div>
-            </div>
+            </div> -->
           </div>
 
           <a href="#" data-wa-topic="Group Travel Quote Request" class="btn btn-primary btn-whatsapp"
@@ -448,30 +456,30 @@
   <section id="offices" class="offices-section section-padding">
     <div class="container">
       <div class="section-title-wrapper">
-        <span class="section-badge"><i class="fas fa-network-wired"></i> Pan-India Network</span>
+        <span class="section-badge"><i class="fas fa-map-marked-alt"></i> Pan-India Locations</span>
         <h2 class="section-title">Our Branch Offices Across India</h2>
-        <p class="section-subtitle">Experience personalized travel consultations across 18+ key centers including
-          Mumbai, Bengaluru, Kolkata, Pune, Tamil Nadu, and major Gujarat hubs.</p>
+        <p class="section-subtitle">Click on any location below to connect directly with our travel expert on WhatsApp.
+        </p>
       </div>
 
-      <!-- Controls & Search Bar Container -->
+      <!-- Search & Region Filters Container -->
       <div class="office-controls-bar">
         <!-- Region Filter Chips -->
         <div class="region-filter-wrapper">
-          <button class="region-chip active" data-region="all">All Centers (18)</button>
+          <button class="region-chip active" data-region="all">All Locations (18)</button>
           <button class="region-chip" data-region="metros"><i class="fas fa-city"></i> Metro Hubs</button>
           <button class="region-chip" data-region="gujarat"><i class="fas fa-map-pin"></i> Gujarat Network (13)</button>
         </div>
 
         <!-- Search Input -->
-        <div class="office-search-box">
+        <!-- <div class="office-search-box">
           <i class="fas fa-search"></i>
-          <input type="text" id="branchSearchInput" placeholder="Search branch (e.g. Mumbai, Pune, Gujarat)...">
-          <span id="branchCountBadge" class="branch-counter-tag">18 Active Centers</span>
-        </div>
+          <input type="text" id="branchSearchInput" placeholder="Search location (e.g. Mumbai, Pune, Anand)...">
+          <span id="branchCountBadge" class="branch-counter-tag">18 Locations</span>
+        </div> -->
       </div>
 
-      <!-- Executive Offices Grid (Injected dynamically) -->
+      <!-- Organic Scattered Location Pins Container (Direct Click, No WhatsApp Logo) -->
       <div id="officesGrid" class="offices-grid">
         <!-- Rendered dynamically -->
       </div>
@@ -483,19 +491,19 @@
     <div class="container">
       <div class="stats-grid">
         <div>
-          <div class="stat-number">10+</div>
+          <div class="stat-number">1+</div>
           <div class="stat-label">Years of Travel Excellence</div>
         </div>
         <div>
-          <div class="stat-number">50,000+</div>
+          <div class="stat-number">5,000+</div>
           <div class="stat-label">Happy & Satisfied Travelers</div>
         </div>
         <div>
-          <div class="stat-number">500+</div>
+          <div class="stat-number">100+</div>
           <div class="stat-label">Curated Holiday Packages</div>
         </div>
         <div>
-          <div class="stat-number">18+</div>
+          <div class="stat-number">15+</div>
           <div class="stat-label">Branch Offices Across India</div>
         </div>
       </div>
@@ -587,48 +595,69 @@
     </div>
   </section>
 
-  <!-- Insta Moments Grid Section -->
-  <section class="insta-section section-padding">
+  <!-- Owner Details Section -->
+  <section id="owner-details" class="owner-section section-padding">
     <div class="container">
       <div class="section-title-wrapper">
-        <span class="section-badge">Social Feed</span>
-        <h2 class="section-title">Insta Moments That Tell A Story</h2>
-        <p class="section-subtitle">Real moments captured by our travelers across world-famous destinations.</p>
+        <span class="section-badge"><i class="fas fa-user-tie"></i> Owner Profile</span>
+        <h2 class="section-title">Owner</h2>
+        <p class="section-subtitle">Dedicated to creating seamless, memorable, and trusted travel experiences across
+          India & Worldwide.</p>
       </div>
 
-      <div class="insta-grid">
-        <div class="insta-card">
-          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=500&q=80"
-            alt="Bali">
-          <a href="https://www.instagram.com/rutva_tours_and_travels?igsh=bnF0N3Z1bnVnNzlp&igsi=bnF0N3Z1bnVnNzlp&utm_source=qr"
-            target="_blank" class="insta-overlay"><i class="fab fa-instagram"></i></a>
+      <div class="owner-card-wrapper">
+        <!-- Left Side: Owner Image -->
+        <div class="owner-image-container">
+          <div class="owner-image-frame">
+            <img src="Logos/owner.jpeg" alt="Rutva Tours & Travels Owner" class="owner-img">
+            <div class="owner-badge-overlay">
+              <i class="fas fa-shield-halved"></i> Owner
+            </div>
+          </div>
         </div>
-        <div class="insta-card">
-          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=500&q=80"
-            alt="Dubai">
 
-          <a href="https://www.instagram.com/rutva_tours_and_travels?igsh=bnF0N3Z1bnVnNzlp&igsi=bnF0N3Z1bnVnNzlp&utm_source=qr"
-            target="_blank" class="insta-overlay"><i class="fab fa-instagram"></i></a>
-        </div>
-        <div class="insta-card">
-          <img src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=500&q=80"
-            alt="Kashmir">
-          <a href="https://www.instagram.com/rutva_tours_and_travels?igsh=bnF0N3Z1bnVnNzlp&igsi=bnF0N3Z1bnVnNzlp&utm_source=qr"
-            target="_blank" class="insta-overlay"><i class="fab fa-instagram"></i></a>
-        </div>
-        <div class="insta-card">
-          <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=500&q=80"
-            alt="Rajasthan">
-          <a href="https://www.instagram.com/rutva_tours_and_travels?igsh=bnF0N3Z1bnVnNzlp&igsi=bnF0N3Z1bnVnNzlp&utm_source=qr"
-            target="_blank" class="insta-overlay"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
+        <!-- Right Side: Owner Name and Details -->
+        <div class="owner-content-container">
+          <span class="owner-role-pill"><i class="fas fa-crown"></i> Owner</span>
+          <h3 class="owner-name">Jagu K. Patel</h3>
+          <p class="owner-bio">
+            Welcome to Rutva Tours & Travels! Our focus has always been on providing high-quality, transparent, and
+            hassle-free travel services tailored to your exact needs. From customized tour packages to top-tier
+            outstation car rentals, we are committed to making your journey unforgettable with 24/7 dedicated personal
+            support.
+          </p>
 
-      <div style="text-align: center;">
-        <a href="https://www.instagram.com/rutva_tours_and_travels?igsh=bnF0N3Z1bnVnNzlp&igsi=bnF0N3Z1bnVnNzlp&utm_source=qr"
-          target="_blank" class="btn btn-outline" style="border-radius: 50px; padding: 0.75rem 2rem;">
-          <i class="fab fa-instagram" style="color: #e1306c; font-size: 1.2rem;"></i> Follow Us on Instagram
-        </a>
+          <div class="owner-stats-grid">
+            <div class="owner-stat-item">
+              <i class="fas fa-award"></i>
+              <div>
+                <strong>1+ Years</strong>
+                <span>Industry Leadership</span>
+              </div>
+            </div>
+            <div class="owner-stat-item">
+              <i class="fas fa-smile-beam"></i>
+              <div>
+                <strong>5,000+</strong>
+                <span>Happy Travelers</span>
+              </div>
+            </div>
+            <div class="owner-stat-item">
+              <i class="fas fa-headset"></i>
+              <div>
+                <strong>24/7 Direct</strong>
+                <span>Customer Care</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="owner-actions">
+            <a href="https://wa.me/917069300077?text=Hi%20Rutva%20Tours%2C%20I%20would%20like%20to%20connect%20with%20the%20Owner%20%2F%20Management."
+              target="_blank" class="btn btn-whatsapp owner-btn">
+              <i class="fab fa-whatsapp"></i> Connect Directly on WhatsApp
+            </a>
+          </div> -->
+        </div>
       </div>
     </div>
   </section>
@@ -704,14 +733,18 @@
               </a>
             </li>
             <li>
-              <a href="mailto:rutvamultiservices@gmail.com" style="color: inherit; text-decoration: none;">
+              <a href="mailto:rutvamultiservices@gmail.com?subject=Travel%20Inquiry%20-%20Rutva%20Tours"
+                style="color: inherit; text-decoration: none;" title="Send Email">
                 <i class="fas fa-envelope" style="color: var(--secondary);"></i> rutvamultiservices@gmail.com
               </a>
             </li>
             <li>
-              <i class="fas fa-map-marker-alt" style="color: var(--secondary);"></i> 203, H M Patel Trade center, Mota
-              bazar, V V Nagar, Anand,
-              Gujarat-388120
+              <a href="https://maps.google.com/?q=203,+H+M+Patel+Trade+center,+Mota+bazar,+V+V+Nagar,+Anand,+Gujarat-388120"
+                target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;"
+                title="Open Location in Google Maps">
+                <i class="fas fa-map-marker-alt" style="color: var(--secondary);"></i> 203, H M Patel Trade center, Mota
+                bazar, V V Nagar, Anand, Gujarat-388120
+              </a>
             </li>
           </ul>
         </div>
@@ -725,6 +758,11 @@
       </div>
     </div>
   </footer>
+
+  <!-- Floating Auto Scroll to Top Button (Right Bottom) -->
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top" title="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
 
   <!-- Application Logic -->
   <script src="js/app.js"></script>
