@@ -8,9 +8,9 @@
 // Global Business Configuration
 const CONFIG = {
   COMPANY_NAME: "Rutva Tours & Travels",
-  PHONE_NUMBER: "917069300077", // Primary WhatsApp Business Contact Number
-  TEL_NUMBER: "+917069300077",
-  DISPLAY_PHONE: "+91 70693 00077",
+  PHONE_NUMBER: "917201946436", // Primary WhatsApp Business Contact Number
+  TEL_NUMBER: "+917201946436",
+  DISPLAY_PHONE: "+91 72019 46436",
   EMAIL: "rutvamultiservices@gmail.com",
   INSTAGRAM_URL: "https://www.instagram.com/rutva_tours_and_travels?igsh=bnF0N3Z1bnVnNzlp&igsi=bnF0N3Z1bnVnNzlp&utm_source=qr"
 };
